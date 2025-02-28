@@ -2,9 +2,11 @@
 
 ## 🎯 Problem Statement
 
+Create a dashboard to visualize datasets (e.g., COVID stats) with interactive charts.
+
 ### **Overview**
 
-In today’s digital era, data is generated at an unprecedented rate. Extracting meaningful insights from large datasets requires effective visualization techniques. Our project, **HX2537: Data Visualization Dashboard**, aims to simplify complex datasets and enhance decision-making through interactive and dynamic visualizations.
+In today’s digital era, data is generated at an unprecedented rate. Extracting meaningful insights from large datasets requires effective visualization techniques. Our project, **Data Drishti**, aims to simplify complex datasets and enhance decision-making through interactive and dynamic visualizations.
 
 ### **Background**
 
@@ -51,36 +53,56 @@ Our goal is to develop a user-friendly dashboard that enables:
 4. [Key Features](#key-features)
 5. [Step-by-Step Workflow](#step-by-step-workflow)
 6. [Tech Stack](#tech-stack)
-7. [Setup & Installation](#setup--installation)
-8. [Usage](#usage)
-9. [Future Improvements](#future-improvements)
-10. [Meet The Team](#meet-the-team)
-11. [Open Source Contributions](#open-source-contributions)
-12. [License](#license)
+7. [Future Enhancements](#future-enhancements)
+8. [Meet The Team](#meet-the-team)
+9. [Open Source Contributions](#open-source-contributions)
+10. [License](#license)
 
 ---
 
 ## 🎥 Demo
 
-[Watch Demo](https://your-demo-link.com) | [Live Preview](https://your-live-dashboard.com)
+![Watch Demo](./video.gif) | 
+[Live Website](https://datadrishti-two.vercel.app/)
 
 ---
 
 ## 📂 Directory Structure
 
-```
-HX2537-Dashboard/
-│── frontend/          # React.js + Vite frontend application
-│   ├── components/    # Reusable UI components
-│   ├── pages/         # Different views/pages
-│   ├── assets/        # Images, icons, styles
-│   ├── styles/        # Tailwind CSS styling files
-│── backend/           # Supabase Backend
-│   ├── database/      # PostgreSQL data storage
-│   ├── auth/          # Supabase Authentication & Authorization
-│── docs/              # Documentation & guides
-│── tests/             # Automated tests
-│── README.md          # Project documentation
+```        
+│── src/          
+│   ├── components/    
+│   ├── contexts/
+│   ├── hooks/
+│   ├── integrations/
+│   ├── lib/
+│   ├── pages/         
+│   ├── App.tsx       
+│   ├── App.css
+│   ├── index.css
+│   ├── main.tsx       
+│   ├── vite-env.d.ts  
+│── supabase/           
+│   ├── config.toml    
+│── .gitignore           
+│── bun.lockb           
+│── components.json      
+│── covid-cases.csv      
+│── covid-vaccines.csv   
+│── download_data.ipynb  
+│── eslint.config.js     
+│── index.html          
+│── package-lock.json   
+│── package.json        
+│── postcss.config.js
+│── Projeto_COVID_19_Dash/
+│── README.md
+│── tailwind.config.ts
+│── tsconfig.app.json
+│── tsconfig.json
+│── tsconfig.node.json
+│── video.gif
+│── vite.config.ts
 ```
 
 ---
@@ -112,21 +134,6 @@ graph TD;
 
 ```
 
----
-
-## 📊 Additional Visuals
-
-### **Example of Dataset Analysis**
-
-| Column Name | Null Values (%) | Unique Values   | Suggested Visualization |
-| ----------- | --------------- | --------------- | ----------------------- |
-| Age         | 0%              | 50              | Histogram               |
-| Salary      | 5%              | 1000            | Box Plot                |
-| Gender      | 0%              | 2 (Male/Female) | Pie Chart               |
-
-### **Sample Visualization Output**
-
-
 
 ---
 
@@ -141,6 +148,19 @@ graph TD;
 
 ---
 
+## 🚀 Future Enhancements
+
+1. **AI-Powered Insights** – Detect trends, anomalies & predictions.  
+2. **Advanced Filtering & Querying** – SQL-based queries & multi-dimensional filters.  
+3. **Automatic Data Preprocessing** – Handle missing values, outliers & data transformation.  
+4. **More Data Source Integrations** – APIs, Google Sheets & real-time data streaming.  
+5. **Collaboration & Sharing** – Multi-user roles, shareable dashboards.  
+6. **Customizable Reports** – Save layouts, export interactive PDFs.  
+7. **Mobile App Version** – React Native app for iOS & Android.  
+8. **Voice & Chatbot Support** – NLP chatbot & voice commands.    
+9. **Real-Time Collaboration** – Live editing, alerts for data changes.  
+
+---
 ## **Meet The Team**
 
 1. **Aryan Paratakke**:
