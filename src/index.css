@@ -1,0 +1,135 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 33% 98%;
+    --foreground: 220 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 15%;
+
+    --primary: 220 90% 56%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 220 15% 93%;
+    --secondary-foreground: 220 30% 15%;
+
+    --muted: 220 15% 93%;
+    --muted-foreground: 220 20% 40%;
+
+    --accent: 220 15% 93%;
+    --accent-foreground: 220 30% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 220 90% 56%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 220 30% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 25% 13%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 25% 13%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 220 90% 56%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 220 25% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 25% 17%;
+    --muted-foreground: 220 20% 70%;
+
+    --accent: 220 25% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 25% 20%;
+    --input: 220 25% 20%;
+    --ring: 220 90% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-full;
+  }
+  
+  .dark ::-webkit-scrollbar-thumb {
+    @apply bg-muted/50;
+  }
+  
+  /* Glass effect */
+  .glass {
+    @apply bg-white/70 dark:bg-black/30 backdrop-blur-md border border-white/20 dark:border-white/10;
+  }
+  
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+  }
+}
+
+@layer components {
+  /* Animated underline for navigation links */
+  .nav-link {
+    @apply relative py-2 px-1;
+  }
+  
+  .nav-link::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 ease-in-out;
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply w-full;
+  }
+  
+  /* Text gradient (use sparingly) */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70;
+  }
+  
+  /* Drag and drop area */
+  .dropzone {
+    @apply border-2 border-dashed rounded-lg p-8 transition-colors duration-300 flex flex-col items-center justify-center;
+  }
+  
+  .dropzone.active {
+    @apply border-primary/70 bg-primary/5;
+  }
+}
