@@ -12,7 +12,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
             <div className="inline-flex items-center px-3 py-1 mb-6 text-sm rounded-full bg-primary/10 text-primary animate-fade-in">
-              <span>Introducing Team Nexus</span>
+              <span>Introduced by - Team Nexus</span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 animate-fade-in">
