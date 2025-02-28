@@ -59,7 +59,7 @@ const NavBar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center group" onClick={closeMenu}>
           <LineChart className="h-6 w-6 text-primary mr-2 group-hover:animate-pulse-soft" />
-          <span className="font-semibold text-lg">Team Nexus</span>
+          <span className="font-semibold text-lg">Data Drishti</span>
         </Link>
 
         {/* Desktop Navigation */}
