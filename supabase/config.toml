@@ -1,1 +1,1 @@
-project_id = "lhsyxlfdzhpmxlndihqm"
+const projectId = import.meta.env.VITE_PROJECT_ID;
